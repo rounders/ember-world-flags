@@ -1,6 +1,6 @@
 {
   "name": "ember-world-flags",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Display country flags in your ember application.",
   "directories": {
     "doc": "doc",
@@ -42,8 +42,7 @@
     "ember-addon"
   ],
   "dependencies": {
-    "ember-cli-babel": "^5.0.0",
-    "ember-cli-htmlbars": "0.7.4"
+    "ember-cli-babel": "^5.0.0"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
