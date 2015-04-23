@@ -1,8 +1,20 @@
 # Ember-world-flags
 
-This README outlines the details of collaborating on this Ember addon.
-
 ## Installation
+
+* ember-cli < 0.2.3 `ember install:addon ember-world-flags`
+* ember-cli >= 0.2.3 `ember install ember-world-flags`
+
+## Example Usage
+
+
+```hbs
+{{flag "ca"}}
+{{flag "ca" 16}}
+{{flag "ca" 32}}
+```
+
+This README outlines the details of collaborating on this Ember addon.
 
 * `git clone` this repository
 * `npm install`
