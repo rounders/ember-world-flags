@@ -9,10 +9,14 @@
 
 
 ```hbs
-{{flag "ca"}}
-{{flag "ca" 16}}
-{{flag "ca" 32}}
+{{world-flag "ca"}}
+{{world-flag "ca" 16}}
+{{world-flag "ca" 32}}
 ```
+
+in the examples above, "ca" is the <a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1 alpha-2</a> code and where 16 or 32 represent the width & height of the flags in pixels. The only sizes currently available are 16 and 32.
+
+## Contributing
 
 This README outlines the details of collaborating on this Ember addon.
 
