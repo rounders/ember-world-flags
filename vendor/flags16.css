@@ -1,7 +1,7 @@
 .flag16 {
   width: 16px;
   height: 16px;
-  background: url(flags16.png) no-repeat;
+  background: url("/ember-world-flags/images/flags16.png") no-repeat;
   display: inline-block;
 }
 

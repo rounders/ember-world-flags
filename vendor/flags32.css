@@ -1,7 +1,7 @@
 .flag32 {
   width: 32px;
   height: 32px;
-  background:url(flags32.png) no-repeat;
+  background:url("/ember-world-flags/images/flags32.png") no-repeat;
   display: inline-block;
 }
 
