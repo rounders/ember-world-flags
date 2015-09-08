@@ -18,4 +18,4 @@ export function worldFlag(params) {
   return Ember.String.htmlSafe(result);
 }
 
-export default Ember.HTMLBars.makeBoundHelper(worldFlag);
+export default Ember.Helper.helper(worldFlag);
