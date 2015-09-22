@@ -20,6 +20,8 @@ in the examples above, "ca" is the <a href="http://en.wikipedia.org/wiki/ISO_316
 
 This README outlines the details of collaborating on this Ember addon.
 
+## Installation
+
 * `git clone` this repository
 * `npm install`
 * `bower install`
@@ -31,6 +33,7 @@ This README outlines the details of collaborating on this Ember addon.
 
 ## Running Tests
 
+* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
