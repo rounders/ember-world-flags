@@ -1,0 +1,44 @@
+<div class="flagDemo">
+  {{world-flag 'us' 32}}
+  {{world-flag 'gb' 32}}
+  {{world-flag 'ca' 32}}
+  {{world-flag 'fr' 32}}
+  {{world-flag 'ge' 32}}
+    <p>\{{world-flag 'us' 32}}</p>
+</div>
+
+<p>This addon provides a world-flag component that can display any country/territory's flag in 16x16 or 32x32.</p>
+<p>
+    Currently, {{countryCodes.length}} flags are supported out of 263 officially assigned codes in the
+    <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Current_codes" target="_blank">ISO 3166-1 alpha-2</a> spec.
+</p>
+
+<p>Missing a flag? <a href="https://github.com/rounders/ember-world-flags/issues/2" target="_blank">Report it here</a>.</p>
+
+<div class="flagSearch">
+  {{input
+    autofocus=true
+    placeholder='Find A Flag...'
+    value=keyword}}
+</div>
+
+<div class="flagList">
+  <div class="country header">
+    <span class="name" {{action 'sortByName'}}>Country</span>
+    <span class="code" {{action 'sortByCode'}}>ISO 3166-1 alpha-2 Code</span>
+    <span class="lg">32x32</span>
+    <span class="sm">16x16</span>
+  </div>
+  {{#if countryCodes.length}}
+    {{#each countryCodes as |code|}}
+      <div class="country">
+        <span class="name">{{code.name}}</span>
+        <span class="code">{{code.id}}</span>
+        <span class="lg">{{world-flag code.id 32}}</span>
+        <span class="sm">{{world-flag code.id 16}}</span>
+      </div>
+    {{/each}}
+  {{else}}
+    <p>Sorry, no flags were found for that query.</p>
+  {{/if}}
+</div>
