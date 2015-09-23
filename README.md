@@ -1,6 +1,6 @@
 # Ember-World-Flags
 
-This addon provides a `world-flag` component that can display any country's flag in 16x16 or 32x32. 
+This addon provides a `world-flag` component that can display any country's flag in 16x16 or 32x32.
 
 ## Installation
 
@@ -17,6 +17,8 @@ This addon provides a `world-flag` component that can display any country's flag
 ```
 
 in the examples above, "ca" is the <a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1 alpha-2</a> code and where 16 or 32 represent the width & height of the flags in pixels. The only sizes currently available are 16 and 32.
+
+Check out the demo on [github pages](http://rounders.github.io/ember-world-flags/).
 
 ## Contributing
 
