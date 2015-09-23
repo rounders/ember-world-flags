@@ -1,10 +1,7 @@
-import Ember from 'ember';
 import { worldFlag } from 'ember-world-flags/helpers/world-flag';
 import { module, test } from 'qunit';
 
-
 module('WorldFlagHelper');
-
 
 test('one arg', function(assert) {
   var result = worldFlag(["ca"]);

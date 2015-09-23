@@ -1,4 +1,6 @@
-# Ember-world-flags
+# Ember-World-Flags
+
+This addon provides a `world-flag` component that can display any country's flag in 16x16 or 32x32. 
 
 ## Installation
 
@@ -20,6 +22,8 @@ in the examples above, "ca" is the <a href="http://en.wikipedia.org/wiki/ISO_316
 
 This README outlines the details of collaborating on this Ember addon.
 
+## Installation
+
 * `git clone` this repository
 * `npm install`
 * `bower install`
@@ -31,6 +35,7 @@ This README outlines the details of collaborating on this Ember addon.
 
 ## Running Tests
 
+* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 

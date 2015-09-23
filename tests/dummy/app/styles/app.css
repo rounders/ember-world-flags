@@ -1,0 +1,86 @@
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+p,
+.flagDemo,
+.flagSearch,
+.title {
+  text-align: center;
+}
+
+.flagDemo {
+  background: #666;
+  border-radius: 0.3em;
+  color: #FFF;
+  margin: 0.5em 25%;
+  padding: 0.5em 0;
+}
+
+.flagSearch {
+  margin-bottom: 1em;
+}
+
+.flagSearch input {
+  border-radius: 0.3em;
+  padding: 0.5em;
+  width: 300px;
+}
+
+.flagList {
+  border: 1px solid #CCC;
+  border-radius: 0.3em;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.flagList p {
+  align-self: center;
+}
+
+.country {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.country:nth-child(odd) {
+  background: #CCC;
+}
+
+.country span {
+  padding: 0.5em;
+}
+
+.country.header .name,
+.country.header .code {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.country.header .name:hover,
+.country.header .code:hover {
+  color: blue;
+}
+
+.country .name {
+  width: 40%;
+}
+
+.country .code {
+  font-weight: bold;
+  width: 30%;
+}
+
+.country .lg,
+.country .sm {
+  width: 10%;
+}
+
+.header {
+  font-weight: bold;
+}
