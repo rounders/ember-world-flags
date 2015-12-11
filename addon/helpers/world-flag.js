@@ -14,7 +14,7 @@ export function worldFlag(params) {
     throw new TypeError('Invalid Number of arguments, expected at least 1 and at most 2');
   }
 
-  var result = `<i class="flag${size} flag-${country}"></i>`;
+  var result = `<i class="flag${size} flag-${country.toLowerCase()}"></i>`;
   return Ember.String.htmlSafe(result);
 }
 
