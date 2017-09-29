@@ -12,8 +12,6 @@ define('dummy/app', ['exports', 'ember-resolver', 'ember-load-initializers', 'du
 
   var App;
 
-  Ember.MODEL_FACTORY_INJECTIONS = true;
-
   App = Ember.Application.extend({
     modulePrefix: _environment.default.modulePrefix,
     podModulePrefix: _environment.default.podModulePrefix,
