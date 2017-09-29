@@ -1,4 +1,5 @@
 # Ember-World-Flags
+[![npm Version][npm-badge]][npm]
 [![Build Status][travis-badge]][travis]
 [![Ember Observer Score](http://emberobserver.com/badges/ember-world-flags.svg)](http://emberobserver.com/addons/ember-world-flags)
 
@@ -52,3 +53,5 @@ For more information on using ember-cli, visit [http://www.ember-cli.com/](http:
 
 [travis]: https://travis-ci.org/rounders/ember-world-flags
 [travis-badge]: https://img.shields.io/travis/rounders/ember-world-flags.svg?branch=master&style=flat-square
+[npm]: https://www.npmjs.org/package/ember-world-flags
+[npm-badge]: https://img.shields.io/npm/v/ember-world-flags.svg?style=flat-square
