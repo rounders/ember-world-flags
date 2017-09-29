@@ -1,6 +1,6 @@
 {
   "name": "ember-world-flags",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Display country flags in your ember application.",
   "directories": {
     "doc": "doc",
