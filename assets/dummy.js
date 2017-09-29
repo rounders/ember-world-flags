@@ -2,7 +2,7 @@
 
 
 
-define('dummy/app', ['exports', 'ember-resolver', 'ember/load-initializers', 'dummy/config/environment'], function (exports, _emberResolver, _loadInitializers, _environment) {
+define('dummy/app', ['exports', 'ember-resolver', 'ember-load-initializers', 'dummy/config/environment'], function (exports, _emberResolver, _emberLoadInitializers, _environment) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -20,7 +20,7 @@ define('dummy/app', ['exports', 'ember-resolver', 'ember/load-initializers', 'du
     Resolver: _emberResolver.default
   });
 
-  (0, _loadInitializers.default)(App, _environment.default.modulePrefix);
+  (0, _emberLoadInitializers.default)(App, _environment.default.modulePrefix);
 
   exports.default = App;
 });
