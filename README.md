@@ -49,3 +49,6 @@ This README outlines the details of collaborating on this Ember addon.
 * `ember build`
 
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+
+[travis]: https://travis-ci.org/rounders/ember-world-flags
+[travis-badge]: https://img.shields.io/travis/rounders/ember-world-flags.svg?branch=master&style=flat-square
