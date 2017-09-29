@@ -1,3 +1,6 @@
+[![Build Status][travis-badge]][travis]
+
+
 # Ember-World-Flags
 
 This addon provides a `world-flag` component that can display any country's flag in 16x16 or 32x32.
