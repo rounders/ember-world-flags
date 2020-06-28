@@ -4,7 +4,8 @@
 [![Ember Observer Score](http://emberobserver.com/badges/ember-world-flags.svg)](http://emberobserver.com/addons/ember-world-flags)
 
 
-This addon provides a `world-flag` component that can display any country's flag in 16x16 or 32x32.
+This addon provides a `world-flag` component that can display any country's flag in any arbitrary size.
+
 
 ## Installation
 
@@ -13,14 +14,22 @@ This addon provides a `world-flag` component that can display any country's flag
 
 ## Example Usage
 
+```hbs
+{{world-flag-svg "ca"}}
+{{world-flag-svg "ca" 32}}
+{{world-flag-svg "ca" 50}}
+```
+
+in the examples above, "ca" is the <a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1 alpha-2</a> code and the 2nd argument is the size of the flag, in pixels. eg 50 means a flag the flag will be 50 pixels by 50 pixels.
+
+
+There is also the original legacy helper that provides flags from a png file in only two sizes: 16x16 or 32x32
 
 ```hbs
 {{world-flag "ca"}}
 {{world-flag "ca" 16}}
 {{world-flag "ca" 32}}
 ```
-
-in the examples above, "ca" is the <a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1 alpha-2</a> code and where 16 or 32 represent the width & height of the flags in pixels. The only sizes currently available are 16 and 32.
 
 Check out the demo on [github pages](http://rounders.github.io/ember-world-flags/).
 
