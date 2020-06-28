@@ -52,7 +52,7 @@ p,
   background: #CCC;
 }
 
-.country span {
+.country .lg, .country .sm {
   padding: 0.5em;
 }
 
