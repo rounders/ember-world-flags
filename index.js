@@ -15,5 +15,6 @@ module.exports = {
 
     target.import('vendor/flags16.css');
     target.import('vendor/flags32.css');
+    target.import('vendor/svgflags.css');
   }
 };
