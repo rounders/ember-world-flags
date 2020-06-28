@@ -40,7 +40,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.locationType = 'auto';
+    ENV.locationType = 'hash';
     ENV.rootURL = '/ember-world-flags/';
   }
 
