@@ -9,8 +9,7 @@ This addon provides a `world-flag` component that can display any country's flag
 
 ## Installation
 
-* ember-cli < 0.2.3 `ember install:addon ember-world-flags`
-* ember-cli >= 0.2.3 `ember install ember-world-flags`
+* ember-cli `ember install ember-world-flags`
 
 ## Example Usage
 
@@ -54,13 +53,10 @@ This README outlines the details of collaborating on this Ember addon.
 * `ember test`
 * `ember test --server`
 
-## Building
+```
+ember install ember-world-flags
+```
 
-* `ember build`
+## License
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
-
-[travis]: https://travis-ci.org/rounders/ember-world-flags
-[travis-badge]: https://img.shields.io/travis/rounders/ember-world-flags.svg?branch=master&style=flat-square
-[npm]: https://www.npmjs.org/package/ember-world-flags
-[npm-badge]: https://img.shields.io/npm/v/ember-world-flags.svg?style=flat-square
+This project is licensed under the [MIT License](LICENSE.md).

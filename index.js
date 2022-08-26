@@ -1,8 +1,7 @@
-/* eslint-env node */
 'use strict';
 
 module.exports = {
-  name: 'ember-world-flags',
+  name: require('./package').name,
   included: function(app, parentAddon) {
     // necessary for nested usage
     // parent addon should call `this._super.included.apply(this, arguments);`
