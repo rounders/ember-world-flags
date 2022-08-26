@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import { sort } from '@ember/object/computed';
 import COUNTRYCODES from 'ember-world-flags/utils/constants/country-codes';
 
 export default Ember.Controller.extend({
@@ -15,7 +16,7 @@ export default Ember.Controller.extend({
       return code.name.toLowerCase().includes(keyword) || code.id.toLowerCase().includes(keyword);
     });
   }),
-  countryCodes: Ember.computed.sort('filteredCodes', 'sortBy'),
+  countryCodes: sort('filteredCodes', 'sortBy'),
   keyword: '',
   sortBy: [],
   sortByName: ['name:asc'],
