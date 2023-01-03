@@ -4,13 +4,15 @@
 
 This addon provides a `world-flag` component that can display any country's flag in any arbitrary size.
 
-## Installation
-=======
+## Compatibility
+
 * Ember.js v4.4 or above
 * Ember CLI v4.4 or above
 * Node.js v12 or above
 
-* ember-cli `ember install ember-world-flags`
+## Installation
+
+`ember install ember-world-flags`
 
 ## Example Usage
 
