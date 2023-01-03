@@ -1,6 +1,6 @@
 # Ember-World-Flags
 [![npm version](https://badge.fury.io/js/ember-world-flags.svg)](https://badge.fury.io/js/ember-world-flags)
-[Ember Observer Score](https://emberobserver.com/badges/ember-world-flags.svg)](https://emberobserver.com/addons/ember-world-flags)
+[![Ember Observer Score](https://emberobserver.com/badges/ember-world-flags.svg)](https://emberobserver.com/addons/ember-world-flags)
 
 This addon provides a `world-flag` component that can display any country's flag in any arbitrary size.
 
