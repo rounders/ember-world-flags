@@ -35,12 +35,6 @@ There is also the original legacy helper that provides flags from a png file in 
 
 Check out the demo on [github pages](http://rounders.github.io/ember-world-flags/).
 
-## Installation
-
-```
-ember install ember-world-flags
-```
-
 ## Contributing
 
 * `git clone` this repository
