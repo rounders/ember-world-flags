@@ -8,6 +8,10 @@ This addon provides a `world-flag` component that can display any country's flag
 
 
 ## Installation
+=======
+* Ember.js v3.28 or above
+* Ember CLI v3.28 or above
+* Node.js v12 or above
 
 * ember-cli `ember install ember-world-flags`
 
