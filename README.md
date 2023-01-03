@@ -1,16 +1,13 @@
 # Ember-World-Flags
-[![npm Version][npm-badge]][npm]
-[![Build Status][travis-badge]][travis]
-[![Ember Observer Score](http://emberobserver.com/badges/ember-world-flags.svg)](http://emberobserver.com/addons/ember-world-flags)
-
+[![npm version](https://badge.fury.io/js/ember-world-flags.svg)](https://badge.fury.io/js/ember-world-flags)
+[Ember Observer Score](https://emberobserver.com/badges/ember-world-flags.svg)](https://emberobserver.com/addons/ember-world-flags)
 
 This addon provides a `world-flag` component that can display any country's flag in any arbitrary size.
 
-
 ## Installation
 =======
-* Ember.js v3.28 or above
-* Ember CLI v3.28 or above
+* Ember.js v4.4 or above
+* Ember CLI v4.4 or above
 * Node.js v12 or above
 
 * ember-cli `ember install ember-world-flags`
@@ -36,15 +33,16 @@ There is also the original legacy helper that provides flags from a png file in 
 
 Check out the demo on [github pages](http://rounders.github.io/ember-world-flags/).
 
-## Contributing
-
-This README outlines the details of collaborating on this Ember addon.
-
 ## Installation
 
+```
+ember install ember-world-flags
+```
+
+## Contributing
+
 * `git clone` this repository
-* `npm install`
-* `bower install`
+* `yarn install`
 
 ## Running
 
@@ -53,13 +51,9 @@ This README outlines the details of collaborating on this Ember addon.
 
 ## Running Tests
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
-```
-ember install ember-world-flags
-```
 
 ## License
 
