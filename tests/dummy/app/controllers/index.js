@@ -1,6 +1,5 @@
 import { action } from '@ember/object';
 import Controller from '@ember/controller';
-import { sort } from '@ember/object/computed';
 import { isBlank } from '@ember/utils';
 import { tracked } from '@glimmer/tracking';
 
@@ -26,13 +25,17 @@ export default class IndexController extends Controller {
     });
   }
 
-  nameSort = ['name:asc'];
-  codeSort = ['id:asc'];
+  nameSort = 'name';
+  codeSort = 'id';
 
   @tracked
   sortBy = this.nameSort;
 
-  @sort('filteredCodes', 'sortBy') countryCodes;
+  get countryCodes() {
+    return this.filteredCodes.sort((a, b) =>
+      a[this.sortBy].localeCompare(b[this.sortBy])
+    );
+  }
 
   @action
   sortByName() {
