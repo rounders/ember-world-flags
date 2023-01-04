@@ -7,9 +7,9 @@ import { tracked } from '@glimmer/tracking';
 import COUNTRYCODES from 'ember-world-flags/utils/constants/country-codes';
 
 export default class IndexController extends Controller {
-  codes = COUNTRYCODES;
+  @tracked codes = COUNTRYCODES;
+  @tracked keyword = '';
 
-  @computed('codes', 'keyword')
   get filteredCodes() {
     const keyword = this.keyword.toLowerCase();
     const codes = this.codes;
@@ -33,8 +33,6 @@ export default class IndexController extends Controller {
   sortBy = this.nameSort;
 
   @sort('filteredCodes', 'sortBy') countryCodes;
-
-  keyword = '';
 
   @action
   sortByName() {
