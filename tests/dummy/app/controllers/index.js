@@ -1,4 +1,4 @@
-import { computed, action } from '@ember/object';
+import { action } from '@ember/object';
 import Controller from '@ember/controller';
 import { sort } from '@ember/object/computed';
 import { isBlank } from '@ember/utils';
