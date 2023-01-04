@@ -10,7 +10,7 @@ module('Integration | Helper | world-flag', function (hooks) {
     this.set('countryCode', 'ca');
 
     await render(hbs`{{world-flag this.countryCode}}`);
-    assert.equal(this.element.innerHTML, '<i class="flag16 flag-ca"></i>');
+    assert.strictEqual(this.element.innerHTML, '<i class="flag16 flag-ca"></i>');
   });
 
   test('specify country code and size', async function (assert) {
@@ -18,13 +18,13 @@ module('Integration | Helper | world-flag', function (hooks) {
     this.set('size', 32);
 
     await render(hbs`{{world-flag this.countryCode this.size}}`);
-    assert.equal(this.element.innerHTML, '<i class="flag32 flag-ca"></i>');
+    assert.strictEqual(this.element.innerHTML, '<i class="flag32 flag-ca"></i>');
   });
 
   test('specify country code in uppercase', async function (assert) {
     this.set('countryCode', 'CA');
 
     await render(hbs`{{world-flag this.countryCode this.size}}`);
-    assert.equal(this.element.innerHTML, '<i class="flag16 flag-ca"></i>');
+    assert.strictEqual(this.element.innerHTML, '<i class="flag16 flag-ca"></i>');
   });
 });
