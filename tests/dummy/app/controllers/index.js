@@ -1,38 +1,43 @@
-import Ember from 'ember';
+import { computed, action } from '@ember/object';
+import Controller from '@ember/controller';
 import { sort } from '@ember/object/computed';
+import { isBlank } from '@ember/utils';
+
 import COUNTRYCODES from 'ember-world-flags/utils/constants/country-codes';
 
-export default Ember.Controller.extend({
-  codes: COUNTRYCODES,
-  filteredCodes: Ember.computed('codes', 'keyword', function () {
-    const keyword = this.get('keyword').toLowerCase();
-    const codes = this.get('codes');
+export default class IndexController extends Controller {
+  codes =  COUNTRYCODES;
 
-    if (Ember.isBlank(keyword)) {
+  @computed('codes', 'keyword')
+  get filteredCodes() {
+    const keyword = this.keyword.toLowerCase();
+    const codes = this.codes;
+
+    if (isBlank(keyword)) {
       return codes;
     }
 
     return codes.filter(function (code) {
       return code.name.toLowerCase().includes(keyword) || code.id.toLowerCase().includes(keyword);
     });
-  }),
-  countryCodes: sort('filteredCodes', 'sortBy'),
-  keyword: '',
-  sortBy: [],
-  sortByName: ['name:asc'],
-  sortByCode: ['id:asc'],
-
-  initSortBy: Ember.on('init', function () {
-    this.set('sortBy', this.get('sortByName'));
-  }),
-
-  actions: {
-    sortByName() {
-      this.set('sortBy', this.get('sortByName'));
-    },
-
-    sortByCode() {
-      this.set('sortBy', this.get('sortByCode'));
-    }
   }
-});
+
+  nameSort =  ['name:asc'];
+  codeSort =  ['id:asc'];
+
+  sortBy = this.nameSort;
+
+  @sort('filteredCodes', 'sortBy') countryCodes;
+
+  keyword =  '';
+
+  @action
+  sortByName() {
+    this.set('sortBy', this.nameSort);
+  }
+
+  @action
+  sortByCode() {
+    this.set('sortBy', this.codeSort);
+  }
+}
