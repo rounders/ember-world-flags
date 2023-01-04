@@ -2,11 +2,12 @@ import { computed, action } from '@ember/object';
 import Controller from '@ember/controller';
 import { sort } from '@ember/object/computed';
 import { isBlank } from '@ember/utils';
+import { tracked } from '@glimmer/tracking';
 
 import COUNTRYCODES from 'ember-world-flags/utils/constants/country-codes';
 
 export default class IndexController extends Controller {
-  codes =  COUNTRYCODES;
+  codes = COUNTRYCODES;
 
   @computed('codes', 'keyword')
   get filteredCodes() {
@@ -18,26 +19,30 @@ export default class IndexController extends Controller {
     }
 
     return codes.filter(function (code) {
-      return code.name.toLowerCase().includes(keyword) || code.id.toLowerCase().includes(keyword);
+      return (
+        code.name.toLowerCase().includes(keyword) ||
+        code.id.toLowerCase().includes(keyword)
+      );
     });
   }
 
-  nameSort =  ['name:asc'];
-  codeSort =  ['id:asc'];
+  nameSort = ['name:asc'];
+  codeSort = ['id:asc'];
 
+  @tracked
   sortBy = this.nameSort;
 
   @sort('filteredCodes', 'sortBy') countryCodes;
 
-  keyword =  '';
+  keyword = '';
 
   @action
   sortByName() {
-    this.set('sortBy', this.nameSort);
+    this.sortBy = this.nameSort;
   }
 
   @action
   sortByCode() {
-    this.set('sortBy', this.codeSort);
+    this.sortBy = this.codeSort;
   }
 }
