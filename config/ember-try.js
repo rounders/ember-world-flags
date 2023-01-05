@@ -65,8 +65,8 @@ module.exports = async function () {
           },
         },
       },
-      embroiderSafe(),
-      embroiderOptimized(),
+      // embroiderSafe(),
+      // embroiderOptimized(),
     ],
   };
 };
