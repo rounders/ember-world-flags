@@ -16,7 +16,7 @@ module('Integration | Helper | world-flag-svg', function (hooks) {
     );
   });
 
-  test ('if you specify size it will use that size', async function (assert) {
+  test('if you specify size it will use that size', async function (assert) {
     this.set('countryCode', 'us');
     this.set('size', 32);
 
