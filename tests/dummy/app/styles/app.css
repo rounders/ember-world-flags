@@ -5,39 +5,39 @@ body {
 }
 
 p,
-.flagDemo,
-.flagSearch,
+.flag-demo,
+.flag-search,
 .title {
   text-align: center;
 }
 
-.flagDemo {
+.flag-demo {
   background: #666;
   border-radius: 0.3em;
-  color: #FFF;
+  color: #fff;
   margin: 0.5em 25%;
   padding: 0.5em 0;
 }
 
-.flagSearch {
+.flag-search {
   margin-bottom: 1em;
 }
 
-.flagSearch input {
+.flag-search input {
   border-radius: 0.3em;
   padding: 0.5em;
   width: 300px;
 }
 
-.flagList {
-  border: 1px solid #CCC;
+.flag-list {
+  border: 1px solid #ccc;
   border-radius: 0.3em;
   align-items: flex-start;
   display: flex;
   flex-direction: column;
 }
 
-.flagList p {
+.flag-list p {
   align-self: center;
 }
 
@@ -49,22 +49,13 @@ p,
 }
 
 .country:nth-child(odd) {
-  background: #CCC;
+  background: #ccc;
 }
 
-.country .lg, .country .sm {
+.country .lg,
+.country .sm {
   padding: 0.5em;
-}
-
-.country.header .name,
-.country.header .code {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.country.header .name:hover,
-.country.header .code:hover {
-  color: blue;
+  width: 10%;
 }
 
 .country .name {
@@ -76,9 +67,15 @@ p,
   width: 30%;
 }
 
-.country .lg,
-.country .sm {
-  width: 10%;
+.country.header .name,
+.country.header .code {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.country.header .name:hover,
+.country.header .code:hover {
+  color: blue;
 }
 
 .header {
