@@ -1,4 +1,4 @@
-<div class="flagDemo">
+<div class="flag-demo">
   {{world-flag-svg 'us' 32}}
   {{world-flag-svg 'gb' 32}}
   {{world-flag-svg 'ca' 32}}
@@ -15,11 +15,11 @@
 
 <p>Missing a flag? <a href="https://github.com/rounders/ember-world-flags/issues/2" target="_blank" rel="noopener noreferrer">Report it here</a>.</p>
 
-<div class="flagSearch">
+<div class="flag-search">
   <Input placeholder="Find A Flag..." @value={{this.keyword}} aria-label="find a flag"/>
 </div>
 
-<div class="flagList">
+<div class="flag-list">
   <div class="country header">
     <span class="name" {{on "click" this.sortByName}} role="button">Country</span>
     <span class="code" {{on "click" this.sortByCode}} role="button">ISO 3166-1 alpha-2 Code</span>
