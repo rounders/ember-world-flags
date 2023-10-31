@@ -14,7 +14,7 @@ p,
 .flagDemo {
   background: #666;
   border-radius: 0.3em;
-  color: #FFF;
+  color: #fff;
   margin: 0.5em 25%;
   padding: 0.5em 0;
 }
@@ -30,7 +30,7 @@ p,
 }
 
 .flagList {
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   border-radius: 0.3em;
   align-items: flex-start;
   display: flex;
@@ -49,10 +49,11 @@ p,
 }
 
 .country:nth-child(odd) {
-  background: #CCC;
+  background: #ccc;
 }
 
-.country .lg, .country .sm {
+.country .lg,
+.country .sm {
   padding: 0.5em;
 }
 
